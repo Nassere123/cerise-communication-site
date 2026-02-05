@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contactez CERISE COMMUNICATION & MARKETING - Lancez votre campagne publicitaire en Côte d'Ivoire">
+    <title>Contact - CERISE COMMUNICATION & MARKETING</title>
+
+    <link rel="stylesheet" href="./css/cerise-brand.css">
+    <link rel="stylesheet" href="./css/navigation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="./images/LOGO CERISE rectangle noir copie.png" alt="CERISE Communication & Marketing"
+                    style="height: 60px; width: auto;">
+            </a>
+
+            <nav class="nav">
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li class="nav-item"><a href="a-propos.html" class="nav-link">À propos</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Nos services</a></li>
+                    <li class="nav-item"><a href="reseau.html" class="nav-link">Réseau</a></li>
+                    <li class="nav-item"><a href="valeurs.html" class="nav-link">Nos valeurs</a></li>
+                    <li class="nav-item"><a href="partenaires.html" class="nav-link">Partenaires</a></li>
+                    <li class="nav-item"><a href="perspectives.html" class="nav-link">Perspectives</a></li>
+                    <li class="nav-item nav-cta"><a href="contact.html"
+                            class="btn btn-primary btn-sm active">Contact</a></li>
+                </ul>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- PAGE HEADER -->
+    <section
+        style="background: var(--gradient-green); color: white; padding: 8rem 0 4rem; margin-top: 80px; text-align: center;">
+        <div class="container">
+            <h1 style="color: white; margin-bottom: 1rem;">Contactez-Nous</h1>
+            <p style="font-size: 1.25rem; color: rgba(255,255,255,0.9); max-width: 700px; margin: 0 auto;">
+                Lancez votre campagne avec nous
+            </p>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
+                <!-- CONTACT FORM -->
+                <div>
+                    <h2 style="margin-bottom: 2rem;">Demander un Devis</h2>
+                    <form id="contactForm" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <div>
+                            <label for="nom"
+                                style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--cerise-black);">
+                                Nom complet <span style="color: var(--cerise-green);">*</span>
+                            </label>
+                            <input type="text" id="nom" name="from_name" required
+                                style="width: 100%; padding: 0.875rem 1rem; border: 2px solid var(--cerise-gray); border-radius: var(--radius-md); font-size: 1rem; transition: border-color 0.3s ease;"
+                                placeholder="Votre nom et prénom">
+                        </div>
+
+                        <div>
+                            <label for="email"
+                                style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--cerise-black);">
+                                Email <span style="color: var(--cerise-green);">*</span>
+                            </label>
+                            <input type="email" id="email" name="from_email" required
+                                style="width: 100%; padding: 0.875rem 1rem; border: 2px solid var(--cerise-gray); border-radius: var(--radius-md); font-size: 1rem; transition: border-color 0.3s ease;"
+                                placeholder="votre@email.com">
+                        </div>
+
+                        <div>
+                            <label for="telephone"
+                                style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--cerise-black);">
+                                Téléphone <span style="color: var(--cerise-green);">*</span>
+                            </label>
+                            <input type="tel" id="telephone" name="telephone" required
+                                style="width: 100%; padding: 0.875rem 1rem; border: 2px solid var(--cerise-gray); border-radius: var(--radius-md); font-size: 1rem; transition: border-color 0.3s ease;"
+                                placeholder="+225 XX XX XX XX XX">
+                        </div>
+
+                        <div>
+                            <label for="entreprise"
+                                style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--cerise-black);">
+                                Entreprise
+                            </label>
+                            <input type="text" id="entreprise" name="entreprise"
+                                style="width: 100%; padding: 0.875rem 1rem; border: 2px solid var(--cerise-gray); border-radius: var(--radius-md); font-size: 1rem; transition: border-color 0.3s ease;"
+                                placeholder="Nom de votre entreprise">
+                        </div>
+
+                        <div>
+                            <label for="message"
+                                style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--cerise-black);">
+                                Message <span style="color: var(--cerise-green);">*</span>
+                            </label>
+                            <textarea id="message" name="message" rows="6" required
+                                style="width: 100%; padding: 0.875rem 1rem; border: 2px solid var(--cerise-gray); border-radius: var(--radius-md); font-size: 1rem; resize: vertical; transition: border-color 0.3s ease; font-family: inherit;"
+                                placeholder="Décrivez votre projet ou vos besoins..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                            <i class="fas fa-paper-plane" style="margin-right: 0.5rem;"></i>
+                            Envoyer ma demande
+                        </button>
+
+                        <p style="font-size: 0.875rem; color: var(--cerise-text-light); text-align: center;">
+                            <i class="fas fa-lock" style="margin-right: 0.25rem;"></i>
+                            Vos informations sont sécurisées et confidentielles
+                        </p>
+                    </form>
+                </div>
+
+                <!-- CONTACT INFO -->
+                <div>
+                    <h2 style="margin-bottom: 2rem;">Nos Coordonnées</h2>
+
+                    <div style="display: flex; flex-direction: column; gap: 2rem;">
+                        <!-- Address -->
+                        <div class="card">
+                            <div style="display: flex; gap: 1.5rem;">
+                                <div
+                                    style="width: 60px; height: 60px; background: var(--gradient-green); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <i class="fas fa-map-marker-alt" style="font-size: 1.5rem; color: white;"></i>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: 0.5rem;">Adresse</h4>
+                                    <p style="color: var(--cerise-text-secondary); margin: 0;">
+                                        Abidjan, Cocody-Riviera Palmeraie<br>
+                                        Lot n°9, Ilot 3 - Rue L<br>
+                                        25 BP 1042 Abidjan 25
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="card">
+                            <div style="display: flex; gap: 1.5rem;">
+                                <div
+                                    style="width: 60px; height: 60px; background: var(--gradient-green); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <i class="fas fa-phone" style="font-size: 1.5rem; color: white;"></i>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: 0.5rem;">Téléphone</h4>
+                                    <p style="color: var(--cerise-text-secondary); margin: 0;">
+                                        <a href="tel:+22507571735 12"
+                                            style="color: var(--cerise-green); font-weight: 600;">+225 07 57 17 35
+                                            12</a><br>
+                                        <small style="color: var(--cerise-text-light);">AISSATA DIARRA - Directrice
+                                            Générale</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="card">
+                            <div style="display: flex; gap: 1.5rem;">
+                                <div
+                                    style="width: 60px; height: 60px; background: var(--gradient-green); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <i class="fas fa-envelope" style="font-size: 1.5rem; color: white;"></i>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: 0.5rem;">Email</h4>
+                                    <p style="color: var(--cerise-text-secondary); margin: 0;">
+                                        <a href="mailto:cerisecommart@gmail.com"
+                                            style="color: var(--cerise-green); font-weight: 600;">cerisecommark@gmail.com</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- CTA SECTION -->
+    <section class="section bg-green" style="color: white;">
+        <div class="container text-center">
+            <div style="max-width: 700px; margin: 0 auto;">
+                <h2 style="color: white; margin-bottom: 1.5rem;">Lancez Votre Campagne Avec Nous</h2>
+                <p style="font-size: 1.125rem; color: rgba(255,255,255,0.9); margin-bottom: 2rem;">
+                    Notre équipe est prête à vous accompagner dans votre projet de communication. Contactez-nous dès
+                    aujourd'hui pour discuter de vos besoins et obtenir un devis personnalisé.
+                </p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="tel:+2250757173512" class="btn btn-outline btn-lg">
+                        <i class="fas fa-phone" style="margin-right: 0.5rem;"></i>
+                        Appelez-nous
+                    </a>
+                    <a href="https://wa.me/2250757173512" target="_blank" class="btn"
+                        style="background: #25D366; color: white;" class="btn-lg">
+                        <i class="fab fa-whatsapp" style="margin-right: 0.5rem;"></i>
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>CERISE COMMUNICATION & MARKETING</h4>
+                    <p>Votre partenaire de confiance pour la publicité extérieure en Côte d'Ivoire.</p>
+                    <p><strong>SARL Unipersonnelle</strong> au capital d'1 000 000 FCFA</p>
+                    <p>Créée en février 2022</p>
+                    <p style="font-size: 0.875rem; color: var(--cerise-text-light); margin-top: 1rem;">
+                        Siège social: Abidjan, Cocody-Riviera Palmeraie<br>
+                        Lot n°9, Ilot 3 - Rue L<br>
+                        25 BP 1042 Abidjan 25
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Liens Rapides</h4>
+                    <ul class="footer-links">
+                        <li><a href="a-propos.html">À propos</a></li>
+                        <li><a href="services.html">Nos services</a></li>
+                        <li><a href="reseau.html">Réseau & Couverture</a></li>
+                        <li><a href="valeurs.html">Nos valeurs</a></li>
+                        <li><a href="perspectives.html">Perspectives</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Nos Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#panneaux">Panneaux publicitaires</a></li>
+                        <li><a href="services.html#gadgets">Gadgets publicitaires</a></li>
+                        <li><a href="services.html#mobilier">Mobiliers urbains</a></li>
+                        <li><a href="services.html#numerique">Numérique & Décoration</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: var(--cerise-green);"></i>
+                        Cocody-Riviera Palmeraie, Abidjan</p>
+                    <p><i class="fas fa-phone" style="margin-right: 0.5rem; color: var(--cerise-green);"></i> +225 07 57
+                        17 35 12</p>
+                    <p><i class="fas fa-envelope" style="margin-right: 0.5rem; color: var(--cerise-green);"></i>
+                        cerisecommark@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 CERISE COMMUNICATION & MARKETING. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script>
+        // Initialize EmailJS
+        (function () {
+            emailjs.init("6mUiVN0vuWFGAGj89");
+        })();
+
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Form validation and styling
+        const form = document.getElementById('contactForm');
+        const inputs = form.querySelectorAll('input, textarea');
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn.innerHTML;
+
+        inputs.forEach(input => {
+            input.addEventListener('focus', function () {
+                this.style.borderColor = 'var(--cerise-green)';
+            });
+
+            input.addEventListener('blur', function () {
+                if (this.value === '' && this.hasAttribute('required')) {
+                    this.style.borderColor = 'var(--cerise-green)';
+                } else {
+                    this.style.borderColor = 'var(--cerise-gray)';
+                }
+            });
+        });
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Show loading state
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Envoi en cours...';
+
+            // Gather data explicitly to ensure correct field mapping
+            var templateParams = {
+                from_name: document.getElementById('nom').value,
+                from_email: document.getElementById('email').value,
+                telephone: document.getElementById('telephone').value,
+                entreprise: document.getElementById('entreprise').value,
+                message: document.getElementById('message').value
+            };
+
+            // Send email using EmailJS explicit send
+            emailjs.send('service_v7kwmhy', 'template_vil7oiq', templateParams)
+                .then(function () {
+                    console.log('SUCCESS!');
+                    alert('Message envoyé avec succès ! Nous vous recontacterons très bientôt.');
+                    form.reset();
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalBtnText;
+                }, function (error) {
+                    console.log('FAILED...', error);
+                    alert('Une erreur est survenue lors de l\'envoi. Veuillez réessayer ou nous appeler directement.');
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalBtnText;
+                });
+        });
+    </script>
+</body>
+
+</html>
