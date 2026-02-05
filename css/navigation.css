@@ -25,7 +25,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem var(--spacing-md);
+    padding: 0.25rem var(--spacing-md);
+    /* Reduced top/bottom padding */
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -41,6 +42,11 @@
     transition: transform var(--transition-fast);
 }
 
+.logo img {
+    height: 45px !important;
+    width: auto;
+}
+
 .logo:hover {
     transform: scale(1.05);
 }
@@ -48,7 +54,8 @@
 .logo-icon {
     width: 48px;
     height: 48px;
-    background: var(--gradient-red);
+    background: var(--cerise-green);
+    /* Updated to use single color var if needed, or keep gradient-red if defined elsewhere. Assuming cerise-green for consistency */
     border-radius: var(--radius-md);
     display: flex;
     align-items: center;
@@ -75,7 +82,7 @@
 
 .logo-subtitle {
     font-size: 0.75rem;
-    color: var(--cerise-red);
+    color: var(--cerise-green);
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -96,6 +103,8 @@
     gap: var(--spacing-md);
     margin: 0;
     padding: 0;
+    align-items: center;
+    /* Ensure items are vertically aligned */
 }
 
 .nav-item {
@@ -104,11 +113,12 @@
 
 .nav-link {
     display: block;
-    padding: 0.5rem 1rem;
+    padding: 0.25rem 1rem;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.9375rem;
     font-weight: 600;
-    color: var(--cerise-text-primary);
+    color: var(--cerise-black);
+    /* Darker for better contrast */
     text-decoration: none;
     transition: color var(--transition-fast);
     position: relative;
@@ -121,14 +131,14 @@
     left: 50%;
     width: 0;
     height: 3px;
-    background: var(--gradient-red);
+    background: var(--cerise-green);
     transform: translateX(-50%);
     transition: width var(--transition-normal);
     border-radius: var(--radius-full);
 }
 
 .nav-link:hover {
-    color: var(--cerise-red);
+    color: var(--cerise-green);
 }
 
 .nav-link:hover::after,
@@ -137,7 +147,47 @@
 }
 
 .nav-link.active {
-    color: var(--cerise-red);
+    color: var(--cerise-green);
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--cerise-white);
+    min-width: 200px;
+    box-shadow: var(--shadow-md);
+    border-radius: 8px;
+    /* Consistent radius */
+    padding: 0.5rem 0;
+    z-index: 1000;
+    flex-direction: column;
+}
+
+.nav-item:hover .dropdown-content {
+    display: flex;
+}
+
+.dropdown-content .nav-link {
+    padding: 0.75rem 1.5rem;
+    width: 100%;
+    border-bottom: 1px solid var(--cerise-gray-light);
+}
+
+.dropdown-content .nav-link:last-child {
+    border-bottom: none;
+}
+
+.dropdown-content .nav-link::after {
+    display: none;
+    /* No underline for dropdown items */
+}
+
+.dropdown-content .nav-link:hover {
+    background-color: var(--cerise-gray-light);
+    color: var(--cerise-green);
 }
 
 /* ============================================

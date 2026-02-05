@@ -24,14 +24,23 @@
 
             <nav class="nav">
                 <ul class="nav-menu" id="navMenu">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
-                    <li class="nav-item"><a href="a-propos.html" class="nav-link">À propos</a></li>
-                    <li class="nav-item"><a href="services.html" class="nav-link active">Nos services</a></li>
-                    <li class="nav-item"><a href="reseau.html" class="nav-link">Réseau</a></li>
-                    <li class="nav-item"><a href="valeurs.html" class="nav-link">Nos valeurs</a></li>
-                    <li class="nav-item"><a href="partenaires.html" class="nav-link">Partenaires</a></li>
-                    <li class="nav-item"><a href="perspectives.html" class="nav-link">Perspectives</a></li>
-                    <li class="nav-item nav-cta"><a href="contact.html" class="btn btn-primary btn-sm">Contact</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">ACCUEIL</a></li>
+
+                    <!-- QUI SOMMES-NOUS Dropdown -->
+                    <li class="nav-item">
+                        <a href="a-propos.html" class="nav-link">QUI SOMMES-NOUS <i class="fas fa-chevron-down"
+                                style="font-size: 0.8em; margin-left: 5px;"></i></a>
+                        <div class="dropdown-content">
+                            <a href="valeurs.html" class="nav-link">Nos Valeurs</a>
+                            <a href="perspectives.html" class="nav-link">Nos Perspectives</a>
+                            <a href="reseau.html" class="nav-link">Notre Réseau</a>
+                            <a href="partenaires.html" class="nav-link">Nos Partenaires</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item"><a href="services.html" class="nav-link active">NOS SERVICES</a></li>
+                    <li class="nav-item nav-cta"><a href="contact.html"
+                            class="btn btn-primary btn-sm">CONTACTEZ-NOUS</a></li>
                 </ul>
 
                 <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
@@ -57,7 +66,7 @@
     <!-- SERVICE 1: PANNEAUX PUBLICITAIRES -->
     <section class="section" id="panneaux">
         <div class="container">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+            <div class="grid grid-2" style="gap: 4rem; align-items: center;">
                 <div class="fade-in">
                     <div
                         style="display: inline-block; background: var(--cerise-green); color: white; padding: 0.5rem 1rem; border-radius: var(--radius-full); font-size: 0.875rem; font-weight: 600; margin-bottom: 1rem;">
@@ -140,7 +149,7 @@
     <!-- SERVICE 2: GADGETS PUBLICITAIRES -->
     <section class="section bg-gray-light" id="gadgets">
         <div class="container">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+            <div class="grid grid-2" style="gap: 4rem; align-items: center;">
                 <div
                     style="background: url('https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?q=80&w=800&auto=format&fit=crop') center/cover; height: 500px; border-radius: var(--radius-lg); display: flex; align-items: flex-end; justify-content: flex-start; position: relative; overflow: hidden; box-shadow: var(--shadow-xl);">
                     <div
@@ -213,7 +222,7 @@
     <!-- SERVICE 3: MOBILIERS URBAINS -->
     <section class="section" id="mobilier">
         <div class="container">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+            <div class="grid grid-2" style="gap: 4rem; align-items: center;">
                 <div class="fade-in">
                     <div
                         style="display: inline-block; background: var(--cerise-green); color: white; padding: 0.5rem 1rem; border-radius: var(--radius-full); font-size: 0.875rem; font-weight: 600; margin-bottom: 1rem;">
@@ -288,7 +297,7 @@
     <!-- SERVICE 4: NUMÉRIQUE & DÉCORATION -->
     <section class="section bg-gray-light" id="numerique">
         <div class="container">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+            <div class="grid grid-2" style="gap: 4rem; align-items: center;">
                 <div
                     style="background: url('images/pexels-gabby-k-9490630.jpg') center/cover; height: 500px; border-radius: var(--radius-lg); display: flex; align-items: flex-end; justify-content: flex-start; position: relative; overflow: hidden; box-shadow: var(--shadow-xl);">
                     <div
@@ -372,6 +381,7 @@
     </section>
 
     <!-- FOOTER -->
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -411,11 +421,11 @@
                 <div class="footer-section">
                     <h4>Contact</h4>
                     <p><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: var(--cerise-green);"></i>
-                        Abidjan, Côte d'Ivoire</p>
-                    <p><i class="fas fa-phone" style="margin-right: 0.5rem; color: var(--cerise-green);"></i> +225 XX XX
-                        XX XX XX</p>
+                        Cocody, Riviera Palmeraie</p>
+                    <p><i class="fas fa-phone" style="margin-right: 0.5rem; color: var(--cerise-green);"></i> +225 05 04
+                        00 43 25 (Appel / WhatsApp)</p>
                     <p><i class="fas fa-envelope" style="margin-right: 0.5rem; color: var(--cerise-green);"></i>
-                        contact@cerisecom.ci</p>
+                        dgcerisecommark@gmail.com</p>
                 </div>
             </div>
 

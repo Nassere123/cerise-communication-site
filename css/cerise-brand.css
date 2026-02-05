@@ -71,6 +71,11 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 html {
   font-size: 16px;
   scroll-behavior: smooth;
@@ -157,7 +162,8 @@ a:hover {
   text-align: center;
   text-decoration: none;
   border: 2px solid transparent;
-  border-radius: var(--radius-full);
+  border-radius: 8px;
+  /* Changed from var(--radius-full) */
   cursor: pointer;
   transition: all var(--transition-normal);
   position: relative;
@@ -182,20 +188,28 @@ a:hover {
 }
 
 .btn-primary {
-  background: var(--gradient-green);
+  background: var(--cerise-green);
+  /* Solid primary color */
   color: var(--cerise-white);
   box-shadow: var(--shadow-md);
+  border: 2px solid var(--cerise-green);
 }
 
 .btn-primary:hover {
+  background: var(--cerise-green-dark);
+  border-color: var(--cerise-green-dark);
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
 }
 
 .btn-secondary {
   background: var(--cerise-white);
-  color: var(--cerise-green);
-  border-color: var(--cerise-green);
+  color: var(--cerise-text-primary);
+  /* Secondary color often implies neutral text or similar, but spec says white bg */
+  border: 2px solid var(--cerise-green);
+  /* Border with primary color */
+  color: var(--cerise-black);
+  /* Keeping text legible */
 }
 
 .btn-secondary:hover {
@@ -207,7 +221,7 @@ a:hover {
 .btn-outline {
   background: transparent;
   color: var(--cerise-white);
-  border-color: var(--cerise-white);
+  border: 2px solid var(--cerise-white);
 }
 
 .btn-outline:hover {

@@ -25,6 +25,9 @@
     <!-- ============================================
          HEADER / NAVIGATION
          ============================================ -->
+    <!-- ============================================
+         HEADER / NAVIGATION
+         ============================================ -->
     <header class="header" id="header">
         <div class="header-container">
             <!-- Logo -->
@@ -36,14 +39,23 @@
             <!-- Navigation -->
             <nav class="nav">
                 <ul class="nav-menu" id="navMenu">
-                    <li class="nav-item"><a href="index.html" class="nav-link active">Accueil</a></li>
-                    <li class="nav-item"><a href="a-propos.html" class="nav-link">À propos</a></li>
-                    <li class="nav-item"><a href="services.html" class="nav-link">Nos services</a></li>
-                    <li class="nav-item"><a href="reseau.html" class="nav-link">Réseau</a></li>
-                    <li class="nav-item"><a href="valeurs.html" class="nav-link">Nos valeurs</a></li>
-                    <li class="nav-item"><a href="partenaires.html" class="nav-link">Partenaires</a></li>
-                    <li class="nav-item"><a href="perspectives.html" class="nav-link">Perspectives</a></li>
-                    <li class="nav-item nav-cta"><a href="contact.html" class="btn btn-primary btn-sm">Contact</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link active">ACCUEIL</a></li>
+
+                    <!-- QUI SOMMES-NOUS Dropdown -->
+                    <li class="nav-item">
+                        <a href="a-propos.html" class="nav-link">QUI SOMMES-NOUS <i class="fas fa-chevron-down"
+                                style="font-size: 0.8em; margin-left: 5px;"></i></a>
+                        <div class="dropdown-content">
+                            <a href="valeurs.html" class="nav-link">Nos Valeurs</a>
+                            <a href="perspectives.html" class="nav-link">Nos Perspectives</a>
+                            <a href="reseau.html" class="nav-link">Notre Réseau</a>
+                            <a href="partenaires.html" class="nav-link">Nos Partenaires</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item"><a href="services.html" class="nav-link">NOS SERVICES</a></li>
+                    <li class="nav-item nav-cta"><a href="contact.html"
+                            class="btn btn-primary btn-sm">CONTACTEZ-NOUS</a></li>
                 </ul>
 
                 <!-- Mobile Menu Toggle -->
@@ -255,7 +267,7 @@
                 <!-- Card 4 -->
                 <div class="card" style="padding: 0; overflow: hidden;">
                     <div
-                        style="height: 180px; background: url('https://images.unsplash.com/photo-1563968743333-044cef8004c3?q=80&w=600&auto=format&fit=crop') center/cover;">
+                        style="height: 180px; background: url('https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=600&auto=format&fit=crop') center/cover;">
                     </div>
                     <div style="padding: 1.5rem;">
                         <h3 class="card-title" style="font-size: 1.25rem;">Numérique & Déco</h3>
@@ -283,7 +295,7 @@
 
             <div
                 style="background: white; padding: 3rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div class="grid grid-2" style="gap: 3rem; align-items: center;">
                     <!-- Map Placeholder -->
                     <div
                         style="background: var(--cerise-gray-light); height: 400px; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
@@ -368,12 +380,11 @@
                 national.
             </p>
             <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                <a href="contact.html" class="btn btn-outline btn-lg">
+                <a href="contact.html" class="btn btn-secondary btn-lg">
                     <i class="fas fa-file-invoice" style="margin-right: 0.5rem;"></i>
                     Demander un devis
                 </a>
-                <a href="contact.html" class="btn" style="background: white; color: var(--cerise-green);"
-                    class="btn-lg">
+                <a href="contact.html" class="btn btn-outline btn-lg" style="margin-left: 0px;">
                     <i class="fas fa-phone" style="margin-right: 0.5rem;"></i>
                     Nous contacter
                 </a>
@@ -478,12 +489,11 @@
                 <div class="footer-section">
                     <h4>Contact</h4>
                     <p><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: var(--cerise-green);"></i>
-                        Abidjan, Côte d'Ivoire</p>
-                    <p><i class="fas fa-phone" style="margin-right: 0.5rem; color: var(--cerise-green);"></i> +225 07 57
-                        17 35 12
-                    </p>
+                        Cocody, Riviera Palmeraie</p>
+                    <p><i class="fas fa-phone" style="margin-right: 0.5rem; color: var(--cerise-green);"></i> +225 05 04
+                        00 43 25 (Appel / WhatsApp)</p>
                     <p><i class="fas fa-envelope" style="margin-right: 0.5rem; color: var(--cerise-green);"></i>
-                        cerisecommark@gmail.com</p>
+                        dgcerisecommark@gmail.com</p>
                 </div>
             </div>
 
