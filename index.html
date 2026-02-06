@@ -19,6 +19,9 @@
 
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Leaflet CSS for OpenStreetMap -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 </head>
 
 <body>
@@ -91,9 +94,9 @@
                 </h1>
                 <p
                     style="font-family: 'Open Sans', sans-serif; font-size: 1.25rem; color: #FFFFFF; margin-bottom: 2rem; line-height: 1.8;">
-                    Leader de la publicité extérieure en Côte d'Ivoire, CERISE COMMUNICATION & MARKETING vous accompagne
-                    dans votre stratégie de communication visuelle avec un réseau de plus de 100 panneaux publicitaires
-                    à travers le pays.
+                    Spécialisée dans la publicité extérieure en Côte d'Ivoire, CERISE COMMUNICATION & MARKETING
+                    accompagne les entreprises dans leur stratégie de communication visuelle avec un réseau de plus de
+                    100 panneaux publicitaires à travers le pays.
                 </p>
                 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
                     <a href="contact.html" class="btn btn-primary btn-lg">
@@ -110,279 +113,177 @@
     </section>
 
     <!-- ============================================
-         KEY METRICS SECTION
+         CHIFFRES CLÉS SECTION (MODERN & MINIMALIST)
          ============================================ -->
     <section class="section bg-gray-light">
         <div class="container">
+            <!-- Header section -->
             <div class="text-center" style="margin-bottom: 4rem;">
-                <h2 style="margin-bottom: 1rem;">CERISE en Chiffres</h2>
-                <p style="font-size: 1.125rem; color: var(--cerise-text-secondary);">Des résultats qui parlent
-                    d'eux-mêmes</p>
+                <h2 style="margin-bottom: 1rem;">Chiffres Clés</h2>
+                <p style="font-size: 1.125rem; color: var(--cerise-text-secondary);">Une croissance au service de votre
+                    visibilité</p>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem;">
-                <!-- Metric 1 - Billboard Icon -->
-                <div class="fade-in" style="background: white; 
-                           padding: 2rem; 
-                           border-radius: var(--radius-lg); 
-                           text-align: center; 
-                           border: 2px solid var(--cerise-green);
-                           box-shadow: var(--shadow-md);
-                           transition: transform 0.3s ease, box-shadow 0.3s ease;"
-                    onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='var(--shadow-xl)'"
-                    onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-md)'">
-                    <div
-                        style="width: 80px; height: 80px; margin: 0 auto 1.5rem; background: var(--cerise-gray-light); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                        <i class="fas fa-rectangle-ad" style="font-size: 2.5rem; color: var(--cerise-green);"></i>
-                    </div>
-                    <h3 style="color: var(--cerise-green); font-size: 3rem; margin-bottom: 0.5rem; font-weight: 700;">
-                        100+</h3>
-                    <p
-                        style="font-weight: 600; color: var(--cerise-text-primary); margin-bottom: 0; font-size: 1.0625rem;">
-                        Panneaux publicitaires</p>
+            <!-- Stats Grid -->
+            <div class="stats-grid">
+                <!-- Stat 1: Panneaux -->
+                <div class="stat-card fade-in">
+                    <i class="fa-regular fa-rectangle-list stat-icon"></i>
+                    <div class="stat-number">+100</div>
+                    <p class="stat-label">Panneaux publicitaires</p>
                 </div>
 
-                <!-- Metric 2 -->
-                <div class="fade-in" style="background: white; 
-                           padding: 2rem; 
-                           border-radius: var(--radius-lg); 
-                           text-align: center; 
-                           border: 2px solid var(--cerise-green);
-                           box-shadow: var(--shadow-md);
-                           transition: transform 0.3s ease, box-shadow 0.3s ease;"
-                    onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='var(--shadow-xl)'"
-                    onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-md)'">
-                    <div
-                        style="width: 80px; height: 80px; margin: 0 auto 1.5rem; background: var(--cerise-gray-light); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                        <i class="fas fa-layer-group" style="font-size: 2.5rem; color: var(--cerise-green);"></i>
-                    </div>
-                    <h3 style="color: var(--cerise-green); font-size: 3rem; margin-bottom: 0.5rem; font-weight: 700;">
-                        200+</h3>
-                    <p
-                        style="font-weight: 600; color: var(--cerise-text-primary); margin-bottom: 0; font-size: 1.0625rem;">
-                        Faces publicitaires</p>
+                <!-- Stat 2: Faces -->
+                <div class="stat-card fade-in">
+                    <i class="fa-regular fa-clone stat-icon"></i>
+                    <div class="stat-number">+200</div>
+                    <p class="stat-label">Faces publicitaires</p>
                 </div>
 
-                <!-- Metric 3 -->
-                <div class="fade-in" style="background: white; 
-                           padding: 2rem; 
-                           border-radius: var(--radius-lg); 
-                           text-align: center; 
-                           border: 2px solid var(--cerise-green);
-                           box-shadow: var(--shadow-md);
-                           transition: transform 0.3s ease, box-shadow 0.3s ease;"
-                    onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='var(--shadow-xl)'"
-                    onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-md)'">
-                    <div
-                        style="width: 80px; height: 80px; margin: 0 auto 1.5rem; background: var(--cerise-gray-light); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                        <i class="fas fa-calendar-check" style="font-size: 2.5rem; color: var(--cerise-green);"></i>
-                    </div>
-                    <h3 style="color: var(--cerise-green); font-size: 3rem; margin-bottom: 0.5rem; font-weight: 700;">4+
-                    </h3>
-                    <p
-                        style="font-weight: 600; color: var(--cerise-text-primary); margin-bottom: 0; font-size: 1.0625rem;">
-                        Années d'expérience</p>
+                <!-- Stat 3: Expérience -->
+                <div class="stat-card fade-in">
+                    <i class="fa-regular fa-calendar-check stat-icon"></i>
+                    <div class="stat-number">4+</div>
+                    <p class="stat-label">Années d'expérience</p>
                 </div>
 
-                <!-- Metric 4 -->
-                <div class="fade-in" style="background: white; 
-                           padding: 2rem; 
-                           border-radius: var(--radius-lg); 
-                           text-align: center; 
-                           border: 2px solid var(--cerise-green);
-                           box-shadow: var(--shadow-md);
-                           transition: transform 0.3s ease, box-shadow 0.3s ease;"
-                    onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='var(--shadow-xl)'"
-                    onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-md)'">
-                    <div
-                        style="width: 80px; height: 80px; margin: 0 auto 1.5rem; background: var(--cerise-gray-light); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                        <i class="fas fa-chart-line" style="font-size: 2.5rem; color: var(--cerise-green);"></i>
-                    </div>
-                    <h3 style="color: var(--cerise-green); font-size: 3rem; margin-bottom: 0.5rem; font-weight: 700;">
-                        +150M</h3>
-                    <p
-                        style="font-weight: 600; color: var(--cerise-text-primary); margin-bottom: 0; font-size: 1.0625rem;">
-                        FCFA de chiffre d'affaires</p>
+                <!-- Stat 4: Chiffre d'Affaires -->
+                <div class="stat-card fade-in">
+                    <i class="fa-regular fa-chart-bar stat-icon"></i>
+                    <div class="stat-number">150M+</div>
+                    <p class="stat-label">FCFA</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ============================================
-         SERVICES OVERVIEW SECTION
+         DOMAINES DE COMPÉTENCES SECTION
          ============================================ -->
     <section class="section" id="services">
         <div class="container">
             <div class="text-center" style="margin-bottom: 3rem;">
-                <h2>Nos Domaines de Compétences</h2>
+                <h2 style="font-family: 'Montserrat', sans-serif; font-weight: 800;">Nos Domaines de Compétences</h2>
                 <p class="text-muted" style="font-size: 1.125rem;">Des solutions complètes pour votre communication
                     visuelle</p>
             </div>
 
-            <div class="grid grid-4" style="gap: 2rem;">
-                <!-- Card 1 -->
-                <div class="card" style="padding: 0; overflow: hidden;">
-                    <div
-                        style="height: 180px; background: url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=600&auto=format&fit=crop') center/cover;">
+            <div class="competence-grid">
+                <!-- Card 1: Panneaux -->
+                <article class="competence-card fade-in">
+                    <div class="competence-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=600&auto=format&fit=crop"
+                            alt="Panneaux Publicitaires">
                     </div>
-                    <div style="padding: 1.5rem;">
-                        <h3 class="card-title" style="font-size: 1.25rem;">Panneaux Publicitaires</h3>
-                        <p class="card-description">Réseau stratégique 12m² et Big Size sur tout le territoire.</p>
-                        <a href="services.html#panneaux"
-                            style="font-weight: 600; display: inline-flex; align-items: center;">
-                            En savoir plus <i class="fas fa-arrow-right"
-                                style="margin-left: 0.5rem; font-size: 0.8em;"></i>
+                    <div class="competence-body">
+                        <h3 class="competence-title">Panneaux Publicitaires</h3>
+                        <p class="competence-description">Réseau stratégique 12m² et Big Size sur tout le territoire.
+                        </p>
+                        <a href="services.html#panneaux" class="competence-link">
+                            En savoir plus <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
-                </div>
+                </article>
 
-                <!-- Card 2 -->
-                <div class="card" style="padding: 0; overflow: hidden;">
-                    <div
-                        style="height: 180px; background: url('https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?q=80&w=600&auto=format&fit=crop') center/cover;">
+                <!-- Card 2: Gadgets -->
+                <article class="competence-card fade-in">
+                    <div class="competence-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?q=80&w=600&auto=format&fit=crop"
+                            alt="Gadgets Publicitaires">
                     </div>
-                    <div style="padding: 1.5rem;">
-                        <h3 class="card-title" style="font-size: 1.25rem;">Gadgets Publicitaires</h3>
-                        <p class="card-description">Sérigraphie, sublimation et personnalisation d'objets.</p>
-                        <a href="services.html#gadgets"
-                            style="font-weight: 600; display: inline-flex; align-items: center;">
-                            En savoir plus <i class="fas fa-arrow-right"
-                                style="margin-left: 0.5rem; font-size: 0.8em;"></i>
+                    <div class="competence-body">
+                        <h3 class="competence-title">Gadgets Publicitaires</h3>
+                        <p class="competence-description">Sérigraphie, sublimation et personnalisation d'objets.</p>
+                        <a href="services.html#gadgets" class="competence-link">
+                            En savoir plus <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
-                </div>
+                </article>
 
-                <!-- Card 3 -->
-                <div class="card" style="padding: 0; overflow: hidden;">
-                    <div
-                        style="height: 180px; background: url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=600&auto=format&fit=crop') center/cover;">
+                <!-- Card 3: Mobilier -->
+                <article class="competence-card fade-in">
+                    <div class="competence-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=600&auto=format&fit=crop"
+                            alt="Mobiliers Urbains">
                     </div>
-                    <div style="padding: 1.5rem;">
-                        <h3 class="card-title" style="font-size: 1.25rem;">Mobiliers Urbains</h3>
-                        <p class="card-description">Conception et branding de supports urbains innovants.</p>
-                        <a href="services.html#mobilier"
-                            style="font-weight: 600; display: inline-flex; align-items: center;">
-                            En savoir plus <i class="fas fa-arrow-right"
-                                style="margin-left: 0.5rem; font-size: 0.8em;"></i>
+                    <div class="competence-body">
+                        <h3 class="competence-title">Mobiliers Urbains</h3>
+                        <p class="competence-description">Conception et branding de supports urbains innovants.</p>
+                        <a href="services.html#mobilier" class="competence-link">
+                            En savoir plus <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
-                </div>
+                </article>
 
-                <!-- Card 4 -->
-                <div class="card" style="padding: 0; overflow: hidden;">
-                    <div
-                        style="height: 180px; background: url('https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=600&auto=format&fit=crop') center/cover;">
+                <!-- Card 4: Numérique -->
+                <article class="competence-card fade-in">
+                    <div class="competence-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=600&auto=format&fit=crop"
+                            alt="Numérique & Déco">
                     </div>
-                    <div style="padding: 1.5rem;">
-                        <h3 class="card-title" style="font-size: 1.25rem;">Numérique & Déco</h3>
-                        <p class="card-description">Solutions digitales et habillage de véhicules/bureaux.</p>
-                        <a href="services.html#numerique"
-                            style="font-weight: 600; display: inline-flex; align-items: center;">
-                            En savoir plus <i class="fas fa-arrow-right"
-                                style="margin-left: 0.5rem; font-size: 0.8em;"></i>
+                    <div class="competence-body">
+                        <h3 class="competence-title">Numérique & Déco</h3>
+                        <p class="competence-description">Solutions digitales et habillage de véhicules/bureaux.</p>
+                        <a href="services.html#numerique" class="competence-link">
+                            En savoir plus <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
     </section>
 
     <!-- ============================================
-         COVERAGE MAP SECTION
+         COUVERTURE NATIONALE SECTION (GLASSMORPHISM)
          ============================================ -->
-    <section class="section bg-gray-light">
+    <section class="section bg-gray-light" id="couverture">
         <div class="container">
-            <div class="text-center" style="margin-bottom: 3rem;">
-                <h2>Couverture Nationale</h2>
-                <p class="text-muted" style="font-size: 1.125rem;">Présents dans toute la Côte d'Ivoire</p>
-            </div>
+            <div class="coverage-glass-container fade-in">
+                <!-- Left: Map Area (OpenStreetMap with Leaflet) -->
+                <div class="coverage-map-placeholder" id="osm-map" style="background: #eee; z-index: 0;">
+                    <!-- Map will be injected here -->
+                </div>
 
-            <div
-                style="background: white; padding: 3rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
-                <div class="grid grid-2" style="gap: 3rem; align-items: center;">
-                    <!-- Map Placeholder -->
-                    <div
-                        style="background: var(--cerise-gray-light); height: 400px; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
-                        <i class="fas fa-map-marked-alt"
-                            style="font-size: 6rem; color: var(--cerise-green); opacity: 0.3;"></i>
-                        <div
-                            style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
-                            <i class="fas fa-map-marker-alt" style="font-size: 3rem; color: var(--cerise-green);"></i>
-                            <p style="margin-top: 1rem; font-weight: 600; color: var(--cerise-black);">Carte interactive
-                                de la Côte d'Ivoire</p>
-                        </div>
-                    </div>
+                <!-- Right: Content Area -->
+                <div>
+                    <h2 class="coverage-title">Couverture Nationale</h2>
+                    <p style="color: #666; margin-bottom: 2rem;">CERISE COMMUNICATION & MARKETING assure une présence
+                        optimale sur les axes les plus fréquentés du pays.</p>
 
-                    <!-- Coverage List -->
-                    <div>
-                        <h3 style="margin-bottom: 1.5rem;">Zones Couvertes</h3>
+                    <ul class="zone-list">
+                        <li class="zone-item">
+                            <span class="zone-checkmark"><i class="fas fa-check"></i></span>
+                            Abidjan (Toutes Communes)
+                        </li>
+                        <li class="zone-item">
+                            <span class="zone-checkmark"><i class="fas fa-check"></i></span>
+                            Yamoussoukro & Bouaké
+                        </li>
+                        <li class="zone-item">
+                            <span class="zone-checkmark"><i class="fas fa-check"></i></span>
+                            San-Pédro & Korhogo
+                        </li>
+                        <li class="zone-item">
+                            <span class="zone-checkmark"><i class="fas fa-check"></i></span>
+                            Grands axes interurbains
+                        </li>
+                    </ul>
 
-                        <div style="margin-bottom: 2rem;">
-                            <h4 style="color: var(--cerise-green); margin-bottom: 1rem;">
-                                <i class="fas fa-building" style="margin-right: 0.5rem;"></i>
-                                Abidjan
-                            </h4>
-                            <ul style="list-style: none; padding: 0;">
-                                <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--cerise-gray);"><i
-                                        class="fas fa-check-circle"
-                                        style="color: var(--cerise-green); margin-right: 0.5rem;"></i> Cocody</li>
-                                <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--cerise-gray);"><i
-                                        class="fas fa-check-circle"
-                                        style="color: var(--cerise-green); margin-right: 0.5rem;"></i> Marcory</li>
-                                <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--cerise-gray);"><i
-                                        class="fas fa-check-circle"
-                                        style="color: var(--cerise-green); margin-right: 0.5rem;"></i> Treichville</li>
-                                <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--cerise-gray);"><i
-                                        class="fas fa-check-circle"
-                                        style="color: var(--cerise-green); margin-right: 0.5rem;"></i> Yopougon</li>
-                                <li style="padding: 0.5rem 0;"><i class="fas fa-check-circle"
-                                        style="color: var(--cerise-green); margin-right: 0.5rem;"></i> Abobo</li>
-                            </ul>
-                        </div>
 
-                        <div>
-                            <h4 style="color: var(--cerise-green); margin-bottom: 1rem;">
-                                <i class="fas fa-map-marked" style="margin-right: 0.5rem;"></i>
-                                Intérieur du Pays
-                            </h4>
-                            <ul style="list-style: none; padding: 0;">
-                                <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--cerise-gray);"><i
-                                        class="fas fa-check-circle"
-                                        style="color: var(--cerise-green); margin-right: 0.5rem;"></i> Bouaké</li>
-                                <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--cerise-gray);"><i
-                                        class="fas fa-check-circle"
-                                        style="color: var(--cerise-green); margin-right: 0.5rem;"></i> Yamoussoukro</li>
-                                <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--cerise-gray);"><i
-                                        class="fas fa-check-circle"
-                                        style="color: var(--cerise-green); margin-right: 0.5rem;"></i> San Pedro</li>
-                                <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--cerise-gray);"><i
-                                        class="fas fa-check-circle"
-                                        style="color: var(--cerise-green); margin-right: 0.5rem;"></i> Soubré</li>
-                                <li style="padding: 0.5rem 0;"><i class="fas fa-check-circle"
-                                        style="color: var(--cerise-green); margin-right: 0.5rem;"></i> Gagnoa</li>
-                            </ul>
-                        </div>
-
-                        <a href="reseau.html" class="btn btn-primary" style="margin-top: 2rem; width: 100%;">
-                            Voir la carte complète <i class="fas fa-arrow-right" style="margin-left: 0.5rem;"></i>
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ============================================
-         CTA SECTION
+         CALL TO ACTION SECTION (MODERN)
          ============================================ -->
-    <section class="section bg-green" style="color: white;">
-        <div class="container text-center">
-            <h2 style="color: white; margin-bottom: 1rem;">Prêt à Booster Votre Visibilité ?</h2>
-            <p
-                style="font-size: 1.25rem; color: rgba(255,255,255,0.9); margin-bottom: 2.5rem; max-width: 700px; margin-left: auto; margin-right: auto;">
-                Lancez votre campagne publicitaire avec CERISE et bénéficiez de notre expertise et de notre réseau
-                national.
-            </p>
+    <section class="cta-modern fade-in">
+        <div class="container">
+            <h2>Prêt à Booster Votre Visibilité ?</h2>
+            <p>Lancez votre campagne publicitaire avec CERISE et bénéficiez de notre expertise et de notre réseau
+                national.</p>
+
             <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
                 <a href="contact.html" class="btn btn-secondary btn-lg">
                     <i class="fas fa-file-invoice" style="margin-right: 0.5rem;"></i>
@@ -397,51 +298,77 @@
     </section>
 
     <!-- ============================================
-         PARTNERS SECTION
+         PARTNERS SECTION (INFINITE MARQUEE)
          ============================================ -->
     <section class="section">
         <div class="container">
             <div class="text-center" style="margin-bottom: 3rem;">
-                <h2>Ils Nous Font Confiance</h2>
+                <h2 style="font-family: 'Montserrat', sans-serif; font-weight: 800;">Ils Nous Font Confiance</h2>
                 <p class="text-muted" style="font-size: 1.125rem;">Nos partenaires et clients de référence</p>
             </div>
 
-            <!-- Infinite Scrolling Carousel -->
-            <div class="partners-carousel">
-                <div class="partners-track">
-                    <!-- First set of logos -->
-                    <div class="partner-logo">
-                        <img src="./images/123.jpg" alt="SIB - Société Ivoirienne de Banque">
+            <!-- Modern Infinite Slider -->
+            <div class="partners-container-v2">
+                <div class="marquee-track">
+                    <!-- Original Set (8 logos) -->
+                    <div class="marquee-logo-card">
+                        <img src="./images/123.jpg" alt="SIB">
                     </div>
-                    <div class="partner-logo">
-                        <img src="./images/lonaci_logo..png" alt="LONACI - Loterie Nationale de Côte d'Ivoire">
+                    <div class="marquee-logo-card">
+                        <img src="./images/lonaci_logo..png" alt="LONACI">
                     </div>
-                    <div class="partner-logo">
-                        <img src="./images/vodoo.jpg" alt="VODOO Group">
+                    <div class="marquee-logo-card">
+                        <img src="./images/vodoo.jpg" alt="VOODOO">
                     </div>
-                    <div class="partner-logo">
+                    <div class="marquee-logo-card">
+                        <img src="./images/unfold.jpg" alt="UNFOLD">
+                    </div>
+                    <!-- Repeat placeholders or real logos to fill the track (total 8) -->
+                    <div class="marquee-logo-card">
+                        <img src="./images/123.jpg" alt="SIB">
+                    </div>
+                    <div class="marquee-logo-card">
+                        <img src="./images/lonaci_logo..png" alt="LONACI">
+                    </div>
+                    <div class="marquee-logo-card">
+                        <img src="./images/vodoo.jpg" alt="VOODOO">
+                    </div>
+                    <div class="marquee-logo-card">
                         <img src="./images/unfold.jpg" alt="UNFOLD">
                     </div>
 
-                    <!-- Duplicate set for seamless loop -->
-                    <div class="partner-logo">
-                        <img src="./images/123.jpg" alt="SIB - Société Ivoirienne de Banque">
+                    <!-- Duplicate Set for Infinite Loop (exactly matching original) -->
+                    <div class="marquee-logo-card">
+                        <img src="./images/123.jpg" alt="SIB">
                     </div>
-                    <div class="partner-logo">
-                        <img src="./images/lonaci_logo..png" alt="LONACI - Loterie Nationale de Côte d'Ivoire">
+                    <div class="marquee-logo-card">
+                        <img src="./images/lonaci_logo..png" alt="LONACI">
                     </div>
-                    <div class="partner-logo">
-                        <img src="./images/vodoo.jpg" alt="VODOO Group">
+                    <div class="marquee-logo-card">
+                        <img src="./images/vodoo.jpg" alt="VOODOO">
                     </div>
-                    <div class="partner-logo">
+                    <div class="marquee-logo-card">
+                        <img src="./images/unfold.jpg" alt="UNFOLD">
+                    </div>
+                    <div class="marquee-logo-card">
+                        <img src="./images/123.jpg" alt="SIB">
+                    </div>
+                    <div class="marquee-logo-card">
+                        <img src="./images/lonaci_logo..png" alt="LONACI">
+                    </div>
+                    <div class="marquee-logo-card">
+                        <img src="./images/vodoo.jpg" alt="VOODOO">
+                    </div>
+                    <div class="marquee-logo-card">
                         <img src="./images/unfold.jpg" alt="UNFOLD">
                     </div>
                 </div>
             </div>
 
             <div class="text-center" style="margin-top: 3rem;">
-                <a href="partenaires.html" class="btn btn-secondary">
-                    Voir tous nos partenaires <i class="fas fa-arrow-right" style="margin-left: 0.5rem;"></i>
+                <a href="partenaires.html" class="btn btn-outline">
+                    Voir tous nos partenaires <i class="fas fa-arrow-right"
+                        style="margin-left: 0.5rem; transition: transform 0.3s ease;"></i>
                 </a>
             </div>
         </div>
@@ -494,10 +421,10 @@
                     <h4>Contact</h4>
                     <p><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: var(--cerise-green);"></i>
                         Cocody, Riviera Palmeraie</p>
-                    <p><i class="fas fa-phone" style="margin-right: 0.5rem; color: var(--cerise-green);"></i> +225 05 04
-                        00 43 25 (Appel / WhatsApp)</p>
+                    <p><i class="fas fa-phone" style="margin-right: 0.5rem; color: var(--cerise-green);"></i> +225 07 57
+                        17 35 12 (Appel / WhatsApp)</p>
                     <p><i class="fas fa-envelope" style="margin-right: 0.5rem; color: var(--cerise-green);"></i>
-                        dgcerisecommark@gmail.com</p>
+                        cerisecommark@gmail.com</p>
                 </div>
             </div>
 
@@ -510,6 +437,61 @@
     <!-- ============================================
          SCRIPTS
          ============================================ -->
+    <!-- Leaflet JS for OpenStreetMap -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script>
+        // Use window.onload to ensure the map container has dimensions
+        window.onload = function () {
+            var mapContainer = document.getElementById('osm-map');
+            if (mapContainer) {
+                // Initialize map centered on Ivory Coast
+                var map = L.map('osm-map', {
+                    scrollWheelZoom: false, // Better UX for scrollable pages
+                    zoomControl: true
+                }).setView([7.54, -5.55], 6);
+
+                // Add OpenStreetMap tiles
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 19,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+
+                // custom circle markers to match brand
+                var markerOptions = {
+                    radius: 8,
+                    fillColor: "#E31937",
+                    color: "#fff",
+                    weight: 2,
+                    opacity: 1,
+                    fillOpacity: 0.9
+                };
+
+                // Add points
+                var locations = [
+                    { name: "Abidjan (Global)", coords: [5.36, -4.01] },
+                    { name: "Cocody", coords: [5.3484, -3.9817] },
+                    { name: "Marcory", coords: [5.3015, -3.9877] },
+                    { name: "Treichville", coords: [5.3000, -4.0100] },
+                    { name: "Port Bouét", coords: [5.2530, -3.9388] },
+                    { name: "Abobo", coords: [5.4167, -4.0167] },
+                    { name: "Anyama", coords: [5.4946, -4.0535] },
+                    { name: "Bingerville", coords: [5.3560, -3.8860] },
+                    { name: "Yopougon", coords: [5.3333, -4.0500] },
+                    { name: "Bouaké", coords: [7.69, -5.03] },
+                    { name: "Yamoussoukro", coords: [6.83, -5.29] },
+                    { name: "San-Pédro", coords: [4.75, -6.64] },
+                    { name: "Korhogo", coords: [9.46, -5.63] },
+                    { name: "Soubré", coords: [5.7850, -6.5860] },
+                    { name: "Gagnoa", coords: [6.1300, -5.9400] }
+                ];
+
+                locations.forEach(function (loc) {
+                    L.circleMarker(loc.coords, markerOptions).addTo(map).bindPopup("<b>" + loc.name + "</b>");
+                });
+            }
+        };
+    </script>
     <script>
         // Mobile Menu Toggle
         const menuToggle = document.getElementById('menuToggle');
