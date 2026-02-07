@@ -421,6 +421,37 @@ a:hover {
   }
 }
 
+/* Mobilier Urbain Grid Layout */
+.mobilier-grid {
+  display: grid !important;
+  grid-template-areas:
+    "content image"
+    "cta cta";
+}
+
+.mobilier-content {
+  grid-area: content;
+}
+
+.mobilier-image {
+  grid-area: image;
+}
+
+.mobilier-cta {
+  grid-area: cta;
+}
+
+@media (max-width: 768px) {
+  .mobilier-grid {
+    grid-template-areas:
+      "content"
+      "image"
+      "cta" !important;
+    grid-template-columns: 1fr;
+    gap: 2rem !important;
+  }
+}
+
 /* ============================================
    ANIMATIONS
    ============================================ */
