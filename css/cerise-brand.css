@@ -706,8 +706,9 @@ a:hover {
    MODERN STATS SECTION
    ============================================ */
 .stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
 }
 
@@ -715,7 +716,7 @@ a:hover {
   background: #ffffff;
   border-radius: 20px;
   border: 1px solid #eee;
-  padding: 3rem 2rem;
+  padding: 2rem 1.5rem;
   text-align: center;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -732,14 +733,14 @@ a:hover {
 }
 
 .stat-icon {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #E31937;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .stat-number {
   font-family: 'Inter', sans-serif;
-  font-size: 3rem;
+  font-size: 2.25rem;
   font-weight: 800;
   color: #E31937;
   line-height: 1.2;
@@ -750,7 +751,7 @@ a:hover {
   font-family: 'Inter', sans-serif;
   color: #333333;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   margin: 0;
 }
 
