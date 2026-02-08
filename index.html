@@ -101,7 +101,7 @@
                 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
                     <a href="contact.html" class="btn btn-primary btn-lg">
                         <i class="fas fa-paper-plane" style="margin-right: 0.5rem;"></i>
-                        Demander informations
+                        Demander des informations
                     </a>
                     <a href="#services" class="btn btn-outline btn-lg">
                         <i class="fas fa-arrow-down" style="margin-right: 0.5rem;"></i>
@@ -250,15 +250,15 @@
                     <ul class="zone-list">
                         <li class="zone-item">
                             <span class="zone-checkmark"><i class="fas fa-check"></i></span>
+                            Anyama
+                        </li>
+                        <li class="zone-item">
+                            <span class="zone-checkmark"><i class="fas fa-check"></i></span>
+                            Bingerville
+                        </li>
+                        <li class="zone-item">
+                            <span class="zone-checkmark"><i class="fas fa-check"></i></span>
                             Bouaké
-                        </li>
-                        <li class="zone-item">
-                            <span class="zone-checkmark"><i class="fas fa-check"></i></span>
-                            Yamoussoukro
-                        </li>
-                        <li class="zone-item">
-                            <span class="zone-checkmark"><i class="fas fa-check"></i></span>
-                            San-Pédro
                         </li>
                         <li class="zone-item">
                             <span class="zone-checkmark"><i class="fas fa-check"></i></span>
@@ -266,15 +266,15 @@
                         </li>
                         <li class="zone-item">
                             <span class="zone-checkmark"><i class="fas fa-check"></i></span>
+                            San-Pédro
+                        </li>
+                        <li class="zone-item">
+                            <span class="zone-checkmark"><i class="fas fa-check"></i></span>
                             Soubré
                         </li>
                         <li class="zone-item">
                             <span class="zone-checkmark"><i class="fas fa-check"></i></span>
-                            Anyama
-                        </li>
-                        <li class="zone-item">
-                            <span class="zone-checkmark"><i class="fas fa-check"></i></span>
-                            Bingerville
+                            Yamoussoukro
                         </li>
                         <li class="zone-item"
                             style="margin-top: 1.5rem; border-top: 1px solid var(--cerise-gray); padding-top: 1rem; color: var(--cerise-green); font-weight: 700;">
@@ -283,15 +283,11 @@
                         </li>
                         <li class="zone-item" style="margin-left: 1.5rem; font-size: 0.95rem;">
                             <span class="zone-checkmark" style="font-size: 0.8rem;"><i class="fas fa-check"></i></span>
+                            Abobo
+                        </li>
+                        <li class="zone-item" style="margin-left: 1.5rem; font-size: 0.95rem;">
+                            <span class="zone-checkmark" style="font-size: 0.8rem;"><i class="fas fa-check"></i></span>
                             Cocody
-                        </li>
-                        <li class="zone-item" style="margin-left: 1.5rem; font-size: 0.95rem;">
-                            <span class="zone-checkmark" style="font-size: 0.8rem;"><i class="fas fa-check"></i></span>
-                            Port-Bouët
-                        </li>
-                        <li class="zone-item" style="margin-left: 1.5rem; font-size: 0.95rem;">
-                            <span class="zone-checkmark" style="font-size: 0.8rem;"><i class="fas fa-check"></i></span>
-                            Marcory
                         </li>
                         <li class="zone-item" style="margin-left: 1.5rem; font-size: 0.95rem;">
                             <span class="zone-checkmark" style="font-size: 0.8rem;"><i class="fas fa-check"></i></span>
@@ -299,17 +295,20 @@
                         </li>
                         <li class="zone-item" style="margin-left: 1.5rem; font-size: 0.95rem;">
                             <span class="zone-checkmark" style="font-size: 0.8rem;"><i class="fas fa-check"></i></span>
-                            Treichville
+                            Marcory
                         </li>
                         <li class="zone-item" style="margin-left: 1.5rem; font-size: 0.95rem;">
                             <span class="zone-checkmark" style="font-size: 0.8rem;"><i class="fas fa-check"></i></span>
-                            Abobo
+                            Port-Bouët
+                        </li>
+                        <li class="zone-item" style="margin-left: 1.5rem; font-size: 0.95rem;">
+                            <span class="zone-checkmark" style="font-size: 0.8rem;"><i class="fas fa-check"></i></span>
+                            Treichville
                         </li>
                         <li class="zone-item" style="margin-left: 1.5rem; font-size: 0.95rem;">
                             <span class="zone-checkmark" style="font-size: 0.8rem;"><i class="fas fa-check"></i></span>
                             Yopougon
                         </li>
-
                     </ul>
 
 
@@ -533,7 +532,7 @@
                 var map = L.map('osm-map', {
                     scrollWheelZoom: false, // Better UX for scrollable pages
                     zoomControl: true
-                }).setView([7.54, -5.55], 6);
+                }).setView([7.54, -5.55], 7);
 
                 // Add OpenStreetMap tiles
                 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -553,20 +552,22 @@
 
                 // Add points
                 var locations = [
-                    { name: "Abidjan (Global)", coords: [5.36, -4.01] },
-                    { name: "Cocody", coords: [5.3484, -3.9817] },
-                    { name: "Marcory", coords: [5.3015, -3.9877] },
-                    { name: "Treichville", coords: [5.3000, -4.0100] },
-                    { name: "Port Bouét", coords: [5.2530, -3.9388] },
+                    // Abidjan communes (alphabetical)
                     { name: "Abobo", coords: [5.4167, -4.0167] },
+                    { name: "Cocody", coords: [5.3484, -3.9817] },
+                    { name: "Koumassi", coords: [5.2897, -3.9476] },
+                    { name: "Marcory", coords: [5.3015, -3.9877] },
+                    { name: "Port-Bouët", coords: [5.2530, -3.9388] },
+                    { name: "Treichville", coords: [5.3000, -4.0100] },
+                    { name: "Yopougon", coords: [5.3333, -4.0500] },
+                    // Interior cities (alphabetical)
                     { name: "Anyama", coords: [5.4946, -4.0535] },
                     { name: "Bingerville", coords: [5.3560, -3.8860] },
-                    { name: "Yopougon", coords: [5.3333, -4.0500] },
                     { name: "Bouaké", coords: [7.69, -5.03] },
-                    { name: "Yamoussoukro", coords: [6.83, -5.29] },
+                    { name: "Gagnoa", coords: [6.1300, -5.9400] },
                     { name: "San-Pédro", coords: [4.75, -6.64] },
                     { name: "Soubré", coords: [5.7850, -6.5860] },
-                    { name: "Gagnoa", coords: [6.1300, -5.9400] }
+                    { name: "Yamoussoukro", coords: [6.83, -5.29] }
                 ];
 
                 locations.forEach(function (loc) {
